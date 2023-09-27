@@ -4,4 +4,45 @@ body {
     flex-direction: column;
     text-align: center;
     color: white;
+    padding: 0 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.url_form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.input_container {
+    display: flex;
+    gap: 16px;
+}
+
+.urls_container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    flex: 1 1 auto;
+}
+
+button {
+    padding: 8px;
+    border-radius: 8px;
 }
