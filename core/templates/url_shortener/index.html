@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>Url Shortener</h1>
+{% endblock %}
+{% block content %}
+    <form method="post">
+    <label for="url">Enter url to shorten:</label>
+        <input id="url" name="url" type="text" placeholder="Url to shorten">
+        <button type="submit">Submit</button>
+    </form>
+    {% for url in urls %}
+        <div class="urls_container">
+            {{ url.url }}
+            Click: {{ url.clicked }}
+        </div>
+    {% endfor %}
+{% endblock %}
